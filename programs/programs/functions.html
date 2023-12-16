@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // normal function
+
+        // function test_function(fname,lname)
+        // {
+        //     alert(fname+ "" +lname);
+        // }
+        // test_function('SAM ','ALEN')
+        
+        //  anonymous function
+
+        // x = (function(a,b){
+        //     return a+b;
+        // })(1,2);
+        // alert(x);
+
+        // function assigned to a variable
+          
+        // x = function(){
+        //     alert("this is assigned to x");
+        // }
+        // x();
+
+        // arrow function
+
+        // x = (a,b)=>{
+        //     alert(a+b);
+
+        // }
+        // x(1,2);
+
+        // callback function
+         
+        function callme(msg){
+            console.log(msg)
+        }
+        function call_callme(msg1,f){
+            f(msg1)
+        }
+        call_callme('this is call msg' , callme)
+    </script>
+</body>
+</html>
